@@ -52,26 +52,24 @@ class Array {
 	
 }
 
+ascii (a) { return a.charCodeAt(0); }
+
 function main(){
 
   Array.SIZE_RATIO = 3;
 
   //create an instance of the array class
-  let arr = new Array();
-
-  //add an item to the array
-  arr.push(3);
-  arr.push(5);
-	arr.push(5);
-	arr.push(3);
-  arr.push(15);
-  arr.push(50);
-  arr.push('lkasjdf');
-  arr.pop();
-  console.log(arr.get(5));
-	
-
-  //console.log(arr);
+  // let arr = new Array();
+  // let str = 'tauhida parveen';
+  // for(let i = 0; i < str.length ; i++ ){    
+  //   console.log(str.substring(i,i+1));
+  //   if(str.substring(i,i+1) === ' '){
+  //     arr.push(ascii('%20'));
+  //   }else{
+  //     arr.push(ascii(str.substring(i,i+1)));
+  //   }
+  //   console.log(arr.get(i));
+  // }
 }
 
 main();
