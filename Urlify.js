@@ -21,3 +21,31 @@ let arrOfNumber = [2,45,60,90,3,1,0,6,-1,5];
   }
   console.log(arr);
 })(arrOfNumber);
+
+let arr1 = [1,3,6,8,11];
+let arr2 = [2,3,5,8,9,10];
+
+function mergeArray(arr1,arr2){
+  let len = arr1.length + arr2.length;
+  let arrMerge = [];
+  for(let i=0,index1=0,index2=0; i < len ; i++){
+    if(arr1[index1] && arr2[index2]){
+      if(arr1[index1] < arr2[index2]){      
+        arrMerge.push(arr1[index1]);
+        index1++; 
+      }else {
+        arrMerge.push(arr2[index2]);
+        index2++;
+      }    
+    }else if(arr1[index1] === undefined){
+      arrMerge.push(arr2[index2]);
+      index2++;
+    }else if(arr2[index2] === undefined){
+      arrMerge.push(arr1[index1]);
+      index1++; 
+    }
+  }
+  console.log(arrMerge);
+}
+
+mergeArray(arr1,arr2);
