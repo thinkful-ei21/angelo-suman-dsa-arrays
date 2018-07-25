@@ -54,7 +54,7 @@
 let str = 'Battle of the Vowels: Hawaii vs. Grozny';
 let charToRemove = {a: 'a',e: 'e',i: 'i',o: 'o',u: 'u'};
 
-function removeChar(str,arr){
+function removeChar(str,charToRemove){
   let newArr =[];
   for(let i= 0; i< str.length;i++){
     if(!(str.substring(i,i+1) in charToRemove)){     
